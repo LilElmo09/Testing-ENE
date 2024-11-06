@@ -1,4 +1,7 @@
 {
+    "nombre": "jim",
+    "apellido": "santander",
     "email": "hello@cypress.io",
-    "contrasena": "1234"
+    "contrasena": "1234",
+    "emailmalo": "hello@cypress"
 }

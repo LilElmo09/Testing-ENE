@@ -12,16 +12,16 @@ describe('Login Test', () => {
 
     it('should successfully log in with valid credentials', () => {
         cy.visit(url)
-        //cy.title().should('eq', 'Ingresar')
+        cy.title().should('eq', 'Ingresar')
         cy.get('#email').should('be.visible').type(email)
         cy.get('#contraseña').should('be.visible').type(contrasena)
         cy.get('.btn').click()
-        //cy.url().should('not.eq', url)
+        cy.url().should('not.eq', url)
     })
 
     it('should detect if email is missing', () => {
         cy.visit(url)
-        //cy.title().should('eq', 'Ingresar')
+        cy.title().should('eq', 'Ingresar')
         cy.get('#contraseña').should('be.visible').type(contrasena)
         cy.get('#email').should('be.visible')
         cy.get('.btn').click()
@@ -33,7 +33,7 @@ describe('Login Test', () => {
 
     it('should detect if password is missing', () => {
         cy.visit(url)
-        //cy.title().should('eq', 'Ingresar')
+        cy.title().should('eq', 'Ingresar')
         cy.get('#email').should('be.visible').type(email)
         cy.get('#contraseña').should('be.visible')
         cy.get('.btn').click()
