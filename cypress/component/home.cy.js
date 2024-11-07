@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'cypress/react'
-import Home from '/FrontEnd-ENE/client/src/components/Home/Home'
+import Home from '@components/'
 
 describe('Home Component', () => {
     it('renders correctly', () => {
