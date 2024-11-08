@@ -5,6 +5,10 @@ import Home from 'FrontEnd-ENE/client/src/components/Home/Home.jsx'
 describe('Home Component', () => {
     it('renders correctly', () => {
         mount(<Home />)
-        cy.get('selector').should('contain', 'expected text')
+        cy.get('h1').should('contain', 'Restaurante Siglo XXI')
+        cy.get('p').should(
+            'contain',
+            '¡Bienvenido a nuestro restaurante! Disfruta de los mejores platillos y bebidas en un ambiente agradable y familiar.'
+        )
     })
 })
