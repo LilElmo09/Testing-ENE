@@ -1,5 +1,5 @@
 describe('Login Test', () => {
-    const url = 'http://localhost:3000/registro'
+    const url = 'http://localhost:3001/registro'
     let nombre
     let apellido
     let email
