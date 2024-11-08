@@ -1,0 +1,24 @@
+{
+    "normalUser": {
+        "email": "jim@example.com",
+        "password": "password123",
+        "roles": ["cliente"]
+    },
+    "adminUser": {
+        "email": "christhian.aracena@correoaiep.cl",
+        "password": "1234",
+        "roles": ["admin"]
+    },
+    "userWithoutEmail": {
+        "email": "",
+        "password": "1234"
+    },
+    "userWithoutPassword": {
+        "email": "jim@example.com",
+        "password": ""
+    },
+    "unregisteredUser": {
+        "email": "jim@badexample.com",
+        "password": "1234"
+    }
+}
