@@ -6,8 +6,8 @@ describe('BackEnd Tests Login', () => {
             method: 'POST',
             url: `${baseUrl}/login/`,
             body: {
-                email: 'jim@test.cl',
-                contraseña: '1234',
+                email: 'jim@example.com',
+                contraseña: 'password123',
             },
             failOnStatusCode: false,
         }).then((response) => {
