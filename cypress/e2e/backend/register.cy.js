@@ -1,16 +1,15 @@
 describe('BackEnd Tests Register', () => {
     const baseUrl = 'http://localhost:3000'
 
-    it('should register a user', () => {
+    beforeEach(() => {
+        cy.fixture('register').as('registerData')
+    })
+
+    it('should register a user', function () {
         cy.request({
             method: 'POST',
             url: `${baseUrl}/register/`,
-            body: {
-                nombre: 'Jim',
-                email: 'jim@example.com',
-                contraseña: 'password123',
-                apellido: 'Santander',
-            },
+            body: this.registerData.validUser,
             failOnStatusCode: false,
         }).then((response) => {
             console.log(response.body)
@@ -21,15 +20,11 @@ describe('BackEnd Tests Register', () => {
             )
         })
     })
-    it('should fail when the name is missing', () => {
+    it('should fail when the name is missing', function () {
         cy.request({
             method: 'POST',
             url: `${baseUrl}/register/`,
-            body: {
-                email: 'jim@example.com',
-                contraseña: 'password123',
-                apellido: 'Santander',
-            },
+            body: this.registerData.missingName,
             failOnStatusCode: false,
         }).then((response) => {
             console.log(response.body)
@@ -40,15 +35,11 @@ describe('BackEnd Tests Register', () => {
             )
         })
     })
-    it('should fail when the email is missing', () => {
+    it('should fail when the email is missing', function () {
         cy.request({
             method: 'POST',
             url: `${baseUrl}/register/`,
-            body: {
-                nombre: 'Jim',
-                contraseña: 'password123',
-                apellido: 'Santander',
-            },
+            body: this.registerData.missingEmail,
             failOnStatusCode: false,
         }).then((response) => {
             console.log(response.body)
@@ -59,15 +50,11 @@ describe('BackEnd Tests Register', () => {
             )
         })
     })
-    it('should fail when the password is missing', () => {
+    it('should fail when the password is missing', function () {
         cy.request({
             method: 'POST',
             url: `${baseUrl}/register/`,
-            body: {
-                nombre: 'Jim',
-                email: 'jim@example.com',
-                apellido: 'Santander',
-            },
+            body: this.registerData.missingPassword,
             failOnStatusCode: false,
         }).then((response) => {
             console.log(response.body)

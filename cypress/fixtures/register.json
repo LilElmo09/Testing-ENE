@@ -1,0 +1,23 @@
+{
+    "validUser": {
+        "nombre": "Jim",
+        "email": "jim@example.com",
+        "contraseña": "password123",
+        "apellido": "Santander"
+    },
+    "missingName": {
+        "email": "jim@example.com",
+        "contraseña": "password123",
+        "apellido": "Santander"
+    },
+    "missingEmail": {
+        "nombre": "Jim",
+        "contraseña": "password123",
+        "apellido": "Santander"
+    },
+    "missingPassword": {
+        "nombre": "Jim",
+        "email": "jim@example.com",
+        "apellido": "Santander"
+    }
+}
