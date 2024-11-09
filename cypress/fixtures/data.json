@@ -3,5 +3,7 @@
     "apellido": "santander",
     "email": "hello@cypress.io",
     "contrasena": "1234",
-    "emailmalo": "hello@cypress"
+    "emailmalo": "hello@cypress",
+    "adminemail": "christhian.aracena@correoaiep.cl",
+    "admincontrasena": "1234"
 }
