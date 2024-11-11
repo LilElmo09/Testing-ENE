@@ -13,5 +13,25 @@
         "email": "jim@example.com",
         "password": "password123",
         "roles": "2"
+    },
+    "WithoutRole": {
+        "nombre": "jim",
+        "apellido": "santander",
+        "email": "jim@example.com",
+        "password": "password123"
+    },
+    "WithoutEmail": {
+        "nombre": "jim",
+        "apellido": "santander",
+        "email": "",
+        "password": "password123",
+        "roles": "2"
+    },
+    "WithoutPass": {
+        "nombre": "jim",
+        "apellido": "santander",
+        "email": "jim@example.com",
+        "password": "",
+        "roles": "2"
     }
 }
