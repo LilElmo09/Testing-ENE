@@ -1,0 +1,17 @@
+{
+    "happyPath": {
+        "nombre": "java",
+        "apellido": "Baeza",
+        "email": "java@correoaiep.cl",
+        "contraseña": "12345",
+        "activo": "False",
+        "rol_id": "2"
+    },
+    "RegisterUser": {
+        "nombre": "jim",
+        "apellido": "santander",
+        "email": "jim@example.com",
+        "password": "password123",
+        "roles": "2"
+    }
+}
